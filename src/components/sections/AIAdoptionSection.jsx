@@ -1,11 +1,11 @@
 import React from 'react';
 
 const AIAdoptionSection = () => (
-  <section className="px-6 sm:px-10 md:px-16 lg:px-30 xl:px-40 w-full" id="about">
-    <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-20 xl:gap-32 items-center justify-center lg:justify-start lg:pl-[15%] xl:pl-[20%]">
+  <section className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 w-full" id="about">
+    <div className="w-full flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-12 xl:gap-20 items-center justify-center">
       {/* Title */}
       <div className="flex-shrink-0 w-full lg:w-auto text-center lg:text-left">
-        <h2 className="font-medium text-[38px] sm:text-[48px] md:text-[60px] lg:text-[72px] xl:text-[80px] leading-[1.2] lg:leading-[1.25] text-black">
+        <h2 className="font-medium text-[28px] sm:text-[36px] md:text-[48px] lg:text-[56px] xl:text-[68px] leading-[1.2] lg:leading-[1.25] text-black">
           AI Adoption<br />
           Consulting to<br />
           Transform<br />
@@ -15,7 +15,7 @@ const AIAdoptionSection = () => (
       
       {/* Content */}
       <div className="lg:pt-4 xl:pt-6 text-center lg:text-left">
-        <p className="font-normal text-[18px] sm:text-[20px] md:text-[22px] lg:text-[26px] leading-[1.6] lg:leading-[38px] text-[#1A1A1A] max-w-[650px]">
+        <p className="font-normal text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px] leading-[1.6] lg:leading-[36px] text-[#1A1A1A] max-w-[550px] lg:max-w-[600px]">
           At Elowen, we help businesses harness the power of Artificial Intelligence (AI) 
           to drive innovation, improve decision-making, and automate processes. Our AI 
           adoption consulting services are designed to help you seamlessly integrate AI 

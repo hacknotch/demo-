@@ -46,10 +46,6 @@ const HeroSection = () => {
             {/* Powering Your Growth - top: 223px */}
             <h1 
               className="font-medium text-[32px] sm:text-[42px] md:text-[52px] lg:text-[62px] leading-[1.25] lg:leading-[75px] text-white mb-4 sm:mb-6"
-              style={{ 
-                textShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
-                backdropFilter: 'blur(100px)'
-              }}
             >
               Powering Your Growth<br />with Modern IT Solutions
             </h1>
@@ -57,10 +53,6 @@ const HeroSection = () => {
             {/* Description - top: 378px (155px below title) */}
             <p 
               className="font-normal text-[16px] sm:text-[18px] md:text-[22px] lg:text-[26px] leading-[1.5] lg:leading-[38px] text-white mb-6 sm:mb-8 lg:mb-10 max-w-full sm:max-w-[500px] lg:max-w-[580px]"
-              style={{ 
-                textShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
-                backdropFilter: 'blur(100px)'
-              }}
             >
               Secure, stable operations powered by smart automation and 24/7 oversight.
             </p>

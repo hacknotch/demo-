@@ -21,9 +21,9 @@ const WhyChooseSection = () => {
         </h2>
         
         {/* Features Grid */}
-        <div className="flex flex-col gap-6 lg:gap-8 items-center">
+        <div className="flex flex-col gap-4 sm:gap-5 lg:gap-6 items-center">
           {/* Row 1 - 3 items */}
-          <div className="flex flex-col lg:flex-row justify-center gap-5 lg:gap-8 items-center">
+          <div className="flex flex-col lg:flex-row justify-center gap-4 sm:gap-5 lg:gap-6 items-center w-full">
             {featuresRow1.map((feature) => (
               <FeatureItem
                 key={feature.id}
@@ -34,7 +34,7 @@ const WhyChooseSection = () => {
           </div>
           
           {/* Row 2 - 2 items centered with slight offset to right */}
-          <div className="flex flex-col lg:flex-row justify-center gap-5 lg:gap-8 items-center lg:ml-[100px]">
+          <div className="flex flex-col lg:flex-row justify-center gap-4 sm:gap-5 lg:gap-6 items-center w-full lg:pl-[50px] xl:pl-[100px]">
             {featuresRow2.map((feature) => (
               <FeatureItem
                 key={feature.id}

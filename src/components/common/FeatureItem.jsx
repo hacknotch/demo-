@@ -50,7 +50,7 @@ const getIcon = (title) => {
 
 const FeatureItem = ({ title, iconPosition = 'right' }) => (
   <div 
-    className="relative bg-white w-[381px] h-[104px] rounded-[22.5px] hover:shadow-md transition-shadow duration-300 border border-[#F05736]"
+    className="relative bg-white w-full max-w-[320px] sm:max-w-[350px] lg:max-w-[381px] h-[90px] sm:h-[95px] lg:h-[104px] rounded-[18px] sm:rounded-[20px] lg:rounded-[22.5px] hover:shadow-md transition-shadow duration-300 border border-[#F05736]"
     style={{
       boxShadow: '0px 3px 3px rgba(0, 0, 0, 0.02)',
       backdropFilter: 'blur(1.5px)'
@@ -59,7 +59,7 @@ const FeatureItem = ({ title, iconPosition = 'right' }) => (
     {/* Orange Gradient Circle with Icon - LEFT position */}
     {iconPosition === 'left' && (
       <div 
-        className="absolute left-[16px] top-1/2 -translate-y-1/2 w-[78px] h-[78px] rounded-full flex items-center justify-center"
+        className="absolute left-[10px] sm:left-[12px] lg:left-[16px] top-1/2 -translate-y-1/2 w-[60px] h-[60px] sm:w-[68px] sm:h-[68px] lg:w-[78px] lg:h-[78px] rounded-full flex items-center justify-center"
         style={{
           background: 'linear-gradient(157.6deg, #F05736 14.59%, #FBB12F 102.21%)'
         }}
@@ -70,8 +70,8 @@ const FeatureItem = ({ title, iconPosition = 'right' }) => (
 
     {/* Text */}
     <span 
-      className={`absolute top-[22px] w-[267px] font-normal text-[21px] leading-[30px] text-[#1A1A1A] ${
-        iconPosition === 'left' ? 'left-[110px]' : 'left-[35px]'
+      className={`absolute top-[18px] sm:top-[20px] lg:top-[22px] w-[180px] sm:w-[220px] lg:w-[267px] font-normal text-[14px] sm:text-[17px] lg:text-[21px] leading-[1.4] lg:leading-[30px] text-[#1A1A1A] ${
+        iconPosition === 'left' ? 'left-[80px] sm:left-[92px] lg:left-[110px]' : 'left-[15px] sm:left-[25px] lg:left-[35px]'
       }`}
     >
       {title}
@@ -80,7 +80,7 @@ const FeatureItem = ({ title, iconPosition = 'right' }) => (
     {/* Orange Gradient Circle with Icon - RIGHT position */}
     {iconPosition === 'right' && (
       <div 
-        className="absolute right-[16px] top-1/2 -translate-y-1/2 w-[78px] h-[78px] rounded-full flex items-center justify-center"
+        className="absolute right-[10px] sm:right-[12px] lg:right-[16px] top-1/2 -translate-y-1/2 w-[60px] h-[60px] sm:w-[68px] sm:h-[68px] lg:w-[78px] lg:h-[78px] rounded-full flex items-center justify-center"
         style={{
           background: 'linear-gradient(157.6deg, #F05736 14.59%, #FBB12F 102.21%)'
         }}

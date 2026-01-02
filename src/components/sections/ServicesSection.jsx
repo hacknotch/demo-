@@ -29,7 +29,7 @@ const ServicesSection = () => {
       id="services"
     >
       <div 
-        className="w-full min-h-[700px] sm:min-h-[800px] lg:min-h-[900px] rounded-b-[20px] sm:rounded-b-[30px] px-6 sm:px-10 md:px-16 lg:px-20 xl:px-32 py-12 sm:py-16 lg:py-20"
+        className="w-full min-h-[700px] sm:min-h-[800px] lg:min-h-[900px] rounded-[20px] sm:rounded-[30px] px-6 sm:px-10 md:px-16 lg:px-20 xl:px-32 py-12 sm:py-16 lg:py-20"
         style={{
           background: 'linear-gradient(180deg, #194952 -21.18%, #081417 64.31%)'
         }}
@@ -52,10 +52,10 @@ const ServicesSection = () => {
       </div>
       
       {/* Divider Line */}
-      <div className="w-full h-[1px] bg-[#9A9A9A] opacity-50 mt-6 sm:mt-8 lg:mt-10" />
+      <div className="w-full h-[1px] bg-[#9A9A9A] opacity-50" />
       
       {/* Services Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-10 xl:gap-16 justify-items-center mt-16 sm:mt-20 lg:mt-28">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-4 md:gap-3 lg:gap-4 justify-items-center mt-10 sm:mt-16 lg:mt-20">
         {services.map((service) => (
           <ServiceCard
             key={service.id}
