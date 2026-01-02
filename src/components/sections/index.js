@@ -1,0 +1,9 @@
+export { default as Navigation } from './Navigation';
+export { default as HeroSection } from './HeroSection';
+export { default as TechnologySection } from './TechnologySection';
+export { default as ServicesSection } from './ServicesSection';
+export { default as AIAdoptionSection } from './AIAdoptionSection';
+export { default as WhyChooseSection } from './WhyChooseSection';
+export { default as TestimonialsSection } from './TestimonialsSection';
+export { default as CTASection } from './CTASection';
+export { default as Footer } from './Footer';
