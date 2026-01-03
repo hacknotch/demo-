@@ -7,9 +7,9 @@ const StarIcon = () => (
 );
 
 const TestimonialCard = ({ quote, name, company, role, avatar }) => (
-  <div className="bg-[#055A6B] rounded-[20px] sm:rounded-[25px] lg:rounded-[30px] p-5 sm:p-8 lg:p-12 w-full max-w-[702px] mx-auto h-auto min-h-[240px] sm:min-h-[260px] lg:min-h-[291px] relative">
+  <div className="bg-[#055A6B] rounded-[20px] sm:rounded-[25px] lg:rounded-[30px] p-5 sm:p-8 lg:p-12 w-full h-[320px] sm:h-[340px] md:h-[360px] lg:h-[380px] flex flex-col relative">
     {/* Rating */}
-    <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+    <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6 flex-shrink-0">
       <div className="flex gap-0.5 sm:gap-1">
         {[...Array(5)].map((_, i) => (
           <StarIcon key={i} />
@@ -19,12 +19,12 @@ const TestimonialCard = ({ quote, name, company, role, avatar }) => (
     </div>
     
     {/* Quote */}
-    <p className="font-normal text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px] leading-[1.5] lg:leading-[26px] text-white mb-6 sm:mb-8 max-w-[604px]">
+    <p className="font-normal text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px] leading-[1.5] lg:leading-[26px] text-white mb-6 sm:mb-8 flex-grow overflow-hidden">
       "{quote}"
     </p>
     
     {/* Author */}
-    <div className="flex items-center gap-3 sm:gap-4">
+    <div className="flex items-center gap-3 sm:gap-4 flex-shrink-0">
       <div 
         className="w-[36px] h-[36px] sm:w-[42px] sm:h-[42px] rounded-full bg-cover bg-center flex-shrink-0"
         style={{ 

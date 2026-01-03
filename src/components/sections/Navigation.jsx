@@ -27,8 +27,9 @@ const Navigation = () => {
           lg:top-auto lg:left-auto lg:right-auto lg:bottom-auto lg:ml-8 xl:ml-12
           flex flex-col lg:flex-row justify-center lg:justify-start items-center 
           gap-5 lg:gap-0
-          bg-[#081417]/98 lg:bg-transparent
+          bg-[#081417] lg:bg-transparent
           transform transition-transform duration-300
+          z-[60] lg:z-auto
           ${isMenuOpen ? 'translate-x-0' : 'translate-x-full lg:translate-x-0'}
         `}
       >
@@ -89,7 +90,7 @@ const Navigation = () => {
 
       {/* Mobile Menu Button */}
       <button 
-        className="flex flex-col gap-1.5 bg-transparent border-none cursor-pointer p-2.5 z-50 lg:hidden"
+        className="flex flex-col gap-1.5 bg-transparent border-none cursor-pointer p-2.5 z-[70] lg:hidden"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Toggle menu"
         aria-expanded={isMenuOpen}

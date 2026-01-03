@@ -25,8 +25,8 @@ const ArrowIcon = () => (
 );
 
 const TechnologySection = () => (
-  <section className="px-4 sm:px-5 md:px-10 lg:px-20 text-center w-full max-w-[1200px] mx-auto">
-    <div className="flex flex-col gap-4 sm:gap-5">
+  <section className="px-4 sm:px-5 md:px-10 lg:px-20 py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28 text-center w-full max-w-[1200px] mx-auto">
+    <div className="flex flex-col gap-6 sm:gap-7 md:gap-8 lg:gap-10">
       {/* Title */}
       <div className="relative flex items-center justify-center">
         <h2 
