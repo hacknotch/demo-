@@ -1,27 +1,9 @@
 import React from 'react';
 import { ServiceCard } from '../common';
+import { SERVICES } from '../../constants';
 
 const ServicesSection = () => {
-  const services = [
-    {
-      id: 1,
-      title: 'Professional Services',
-      description: 'Expert professional services tailored to drive business success and strategic growth.',
-      image: '/hero-bg.jpg',
-    },
-    {
-      id: 2,
-      title: 'IT Infrastructure',
-      description: 'Comprehensive managed IT and infrastructure services to optimize and secure your business operations.',
-      image: '/hero-bg.jpg',
-    },
-    {
-      id: 3,
-      title: 'Managed Security',
-      description: 'Robust managed security services to protect your business from evolving cyber threats.',
-      image: '/hero-bg.jpg',
-    },
-  ];
+  const services = SERVICES;
 
   return (
     <section 

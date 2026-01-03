@@ -1,13 +1,10 @@
 import React from 'react';
 import Navigation from './Navigation';
 import { Button } from '../common';
+import { HERO_TAGS } from '../../constants';
 
 const HeroSection = () => {
-  const heroTags = [
-    'IT Services',
-    'Security Solutions',
-    'Cloud & DevOps',
-  ];
+  const heroTags = HERO_TAGS;
 
   return (
     <section 

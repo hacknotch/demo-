@@ -1,57 +1,9 @@
 import React from 'react';
 import { TestimonialCard } from '../common';
+import { TESTIMONIALS } from '../../constants';
 
 const TestimonialsSection = () => {
-  const testimonials = [
-    {
-      id: 1,
-      quote: "With Elowen's resource outsourcing model, we reduced hiring costs and onboarded trained talent in record time. Their people are dependable, proactive, and always deliver.",
-      name: 'P MOHANTY',
-      company: 'INTELLIROOT',
-      role: 'Quality Engineering',
-      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100',
-    },
-    {
-      id: 2,
-      quote: "Elowen transformed our IT infrastructure completely. Their managed security services gave us peace of mind and their team was always available 24/7 for any issues.",
-      name: 'SARAH JOHNSON',
-      company: 'TECHWAVE',
-      role: 'CTO',
-      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100',
-    },
-    {
-      id: 3,
-      quote: "The AI adoption consulting from Elowen helped us automate 60% of our processes. Their expertise in integrating AI solutions is unmatched in the industry.",
-      name: 'MICHAEL CHEN',
-      company: 'DATAFLOW INC',
-      role: 'Operations Director',
-      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100',
-    },
-    {
-      id: 4,
-      quote: "Professional, reliable, and innovative. Elowen's team delivered our cloud migration project ahead of schedule and under budget. Highly recommended!",
-      name: 'EMILY WATSON',
-      company: 'CLOUDNINE',
-      role: 'VP Engineering',
-      avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100',
-    },
-    {
-      id: 5,
-      quote: "Working with Elowen has been a game-changer for our cybersecurity posture. Their proactive approach to threat detection saved us from multiple potential breaches.",
-      name: 'DAVID MILLER',
-      company: 'SECURETECH',
-      role: 'CISO',
-      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100',
-    },
-    {
-      id: 6,
-      quote: "Elowen's professional services team helped us scale our operations seamlessly. Their strategic guidance and technical expertise are truly world-class.",
-      name: 'ANNA RODRIGUEZ',
-      company: 'GROWTHLAB',
-      role: 'CEO',
-      avatar: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100',
-    },
-  ];
+  const testimonials = TESTIMONIALS;
 
   // Duplicate testimonials for seamless infinite scroll
   const duplicatedTestimonials = [...testimonials, ...testimonials];

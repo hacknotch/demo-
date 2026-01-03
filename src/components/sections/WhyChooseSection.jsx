@@ -1,17 +1,10 @@
 import React from 'react';
 import { FeatureItem } from '../common';
+import { FEATURES } from '../../constants';
 
 const WhyChooseSection = () => {
-  const featuresRow1 = [
-    { id: 1, title: 'Scalable Solutions for any Business Size', iconPosition: 'right' },
-    { id: 2, title: 'Focus on ROI and Business Outcome', iconPosition: 'right' },
-    { id: 3, title: 'Customized AI Roadmaps', iconPosition: 'right' },
-  ];
-
-  const featuresRow2 = [
-    { id: 4, title: 'Hands-on Implementation Support', iconPosition: 'left' },
-    { id: 5, title: 'Expert Teams in AI Technologies and Trends', iconPosition: 'left' },
-  ];
+  const featuresRow1 = FEATURES.filter(f => f.row === 1);
+  const featuresRow2 = FEATURES.filter(f => f.row === 2);
 
   return (
     <section className="px-4 sm:px-5 md:px-10 lg:px-20 xl:px-32 w-full">

@@ -1,17 +1,11 @@
 import React, { useState } from 'react';
 import { Logo } from '../common';
+import { NAV_LINKS } from '../../constants';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navLinks = [
-    { href: '#home', label: 'Home', active: true },
-    { href: '#services', label: 'Services', active: false },
-    { href: '#about', label: 'About Us', active: false },
-    { href: '#contact', label: 'Contact Us', active: false },
-  ];
-
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const navLinks = NAV_LINKS.map((link, index) => ({ ...link, active: index === 0 }));
 
   return (
     <nav className="flex justify-between items-center pt-6 sm:pt-8 md:pt-10 lg:pt-[49px] pb-4 sm:pb-6 lg:pb-8 px-4 sm:px-6 md:px-12 lg:px-24 relative z-50">
@@ -71,27 +65,6 @@ const Navigation = () => {
           ))}
         </div>
 
-        {/* Mobile menu items */}
-        <div className="flex lg:hidden flex-col items-center gap-4">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className={`
-                font-medium text-xl py-3 px-8
-                transition-all duration-200
-                ${link.active 
-                  ? 'gradient-orange text-white rounded-full' 
-                  : 'text-white hover:opacity-80'
-                }
-              `}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {link.label}
-            </a>
-          ))}
-        </div>
-
         {/* Mobile nav links */}
         <div className="flex flex-col lg:hidden items-center gap-5">
           {navLinks.map((link) => (
@@ -117,7 +90,7 @@ const Navigation = () => {
       {/* Mobile Menu Button */}
       <button 
         className="flex flex-col gap-1.5 bg-transparent border-none cursor-pointer p-2.5 z-50 lg:hidden"
-        onClick={toggleMenu}
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Toggle menu"
         aria-expanded={isMenuOpen}
       >
